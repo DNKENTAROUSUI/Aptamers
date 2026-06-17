@@ -1,0 +1,163 @@
+aptamer_id,aptamer_name,sequence,nucleic_acid_type,target_name,target_type,kd_value,kd_unit,source_database,reference_doi,candidate_status,parent_aptamer_id
+APT001,TBA15,GGTTGGTGTGGTTGG,DNA,Thrombin,protein,25.0,nM,AptaDB,10.1038/355564a0,known_or_reported,
+APT001_VAR01,TBA15-candidate-v1,GGTTGGTGTGTTTGG,DNA,Thrombin,protein,,,exploratory_variant,,in_silico_variant,APT001
+APT001_VAR02,TBA15-candidate-v2,GGTCGGTGAGGTTGG,DNA,Thrombin,protein,,,exploratory_variant,,in_silico_variant,APT001
+APT002,TBA29,AGTCCGTGGTAGGGCAGGTTGGGGTGACT,DNA,Thrombin,protein,0.5,nM,AptaDB,10.1006/jmbi.1997.1013,known_or_reported,
+APT002_VAR01,TBA29-candidate-v1,AGTCCGTGGTCGGGCAGGTCGGGGTGACT,DNA,Thrombin,protein,,,exploratory_variant,,in_silico_variant,APT002
+APT002_VAR02,TBA29-candidate-v2,AGTCCGTAGTAGGGCAGTTTGGGGTGACT,DNA,Thrombin,protein,,,exploratory_variant,,in_silico_variant,APT002
+APT004,NU172,CGCCTAGGTTGGGTAGGGTGGTGGCG,DNA,Thrombin,protein,0.3,nM,AptaDB,,known_or_reported,
+APT004_VAR01,NU172-candidate-v1,CGCCTAGGTTTGGTAGGGTAGTGGCG,DNA,Thrombin,protein,,,exploratory_variant,,in_silico_variant,APT004
+APT004_VAR02,NU172-candidate-v2,CGCCTAGGTTAGGTAGGTTGGTGGCG,DNA,Thrombin,protein,,,exploratory_variant,,in_silico_variant,APT004
+APT005,Macugen,CGGAAUCAGUGAAUGCUUAUACAUCCG,RNA,VEGF165,protein,0.05,nM,UTexas,10.1038/nature03563,known_or_reported,
+APT005_VAR01,Macugen-candidate-v1,CGGAAUCAGUUAAUGCUUACACAUCCG,RNA,VEGF165,protein,,,exploratory_variant,,in_silico_variant,APT005
+APT005_VAR02,Macugen-candidate-v2,CGGAAUCAGCGAAUGCUAAUACAUCCG,RNA,VEGF165,protein,,,exploratory_variant,,in_silico_variant,APT005
+APT006,VEGF-apt1,ATACCAGTCTATTCAATTGGGCCCGTCCGTATGGTGGGT,DNA,VEGF165,protein,1.4,nM,AptaDB,10.1021/bi015723l,known_or_reported,
+APT006_VAR01,VEGF-apt1-candidate-v1,ATACCAGTCTCTTCAATTGAGCCCGTCCGTATGGTGGGT,DNA,VEGF165,protein,,,exploratory_variant,,in_silico_variant,APT006
+APT006_VAR02,VEGF-apt1-candidate-v2,ATACCAGTCTATTCAATAGGGCCCGTCCGTGTGGTGGGT,DNA,VEGF165,protein,,,exploratory_variant,,in_silico_variant,APT006
+APT007,SL2-B,CAATTGGGCCCGTCCGTATGGTGGGTGTGCTGGCC,DNA,VEGF,protein,2.5,nM,Ribocentre,,known_or_reported,
+APT007_VAR01,SL2-B-candidate-v1,CAATTGGGCCGGTCCGTATAGTGGGTGTGCTGGCC,DNA,VEGF,protein,,,exploratory_variant,,in_silico_variant,APT007
+APT007_VAR02,SL2-B-candidate-v2,CAATTGGGCCCGTCCGTCTGGTGGGTGTGCCGGCC,DNA,VEGF,protein,,,exploratory_variant,,in_silico_variant,APT007
+APT008,PDGF-apt36t,CAGGCTACGGCACGTAGAGCATCACCATGATCCTG,DNA,PDGF-BB,protein,0.1,nM,AptaDB,10.1073/pnas.95.11.5462,known_or_reported,
+APT008_VAR01,PDGF-apt36t-candidate-v1,CAGGCTACGGGACGTAGAGTATCACCATGATCCTG,DNA,PDGF-BB,protein,,,exploratory_variant,,in_silico_variant,APT008
+APT008_VAR02,PDGF-apt36t-candidate-v2,CAGGCTACGGCACGTAGCGCATCACCATGACCCTG,DNA,PDGF-BB,protein,,,exploratory_variant,,in_silico_variant,APT008
+APT009,PDGF-apt-B,TGGGAGGGCGGGGTGGGGAAATCAGTGT,DNA,PDGF-BB,protein,0.5,nM,UTexas,,known_or_reported,
+APT009_VAR01,PDGF-apt-B-candidate-v1,TGGGAGGGCGTGGTGGGGAGATCAGTGT,DNA,PDGF-BB,protein,,,exploratory_variant,,in_silico_variant,APT009
+APT009_VAR02,PDGF-apt-B-candidate-v2,TGGGAGGGTGGGGTGGGTAAATCAGTGT,DNA,PDGF-BB,protein,,,exploratory_variant,,in_silico_variant,APT009
+APT010,D17.4,GGGGCACGTTTATCCGTCCCTCCTAGTGGCGTGCCCC,DNA,IgE,protein,10.0,nM,AptaDB,10.1073/pnas.93.18.9779,known_or_reported,
+APT010_VAR01,D17.4-candidate-v1,GGGGCACGTTAATCCGTCCTTCCTAGTGGCGTGCCCC,DNA,IgE,protein,,,exploratory_variant,,in_silico_variant,APT010
+APT010_VAR02,D17.4-candidate-v2,GGGGCACGTTTATCCGTGCCTCCTAGTGGCATGCCCC,DNA,IgE,protein,,,exploratory_variant,,in_silico_variant,APT010
+APT011,IgE-R1,GCGCGGGGCACGTTTATCCGTCCCTCCTAGTGGCGTGCCCCGCGC,DNA,IgE,protein,33.0,nM,Apta-Index,,known_or_reported,
+APT011_VAR01,IgE-R1-candidate-v1,GCGCGGGGCAGGTTTATCCATCCCTCCTAGTGGCGTGCCCCGCGC,DNA,IgE,protein,,,exploratory_variant,,in_silico_variant,APT011
+APT011_VAR02,IgE-R1-candidate-v2,GCGCGGGGCACGTTTATGCGTCCCTCCTAGCGGCGTGCCCCGCGC,DNA,IgE,protein,,,exploratory_variant,,in_silico_variant,APT011
+APT012,Lys-apt1,ATCAGGGCTAAAGAGTGCAGAGTTACTTAG,DNA,Lysozyme,protein,31.0,nM,AptaDB,10.1016/j.ab.2007.07.014,known_or_reported,
+APT012_VAR01,Lys-apt1-candidate-v1,ATCAGGGCTACAGAGTGCAAAGTTACTTAG,DNA,Lysozyme,protein,,,exploratory_variant,,in_silico_variant,APT012
+APT012_VAR02,Lys-apt1-candidate-v2,ATCAGGACTAAAGAGTGGAGAGTTACTTAG,DNA,Lysozyme,protein,,,exploratory_variant,,in_silico_variant,APT012
+APT013,Lys-RNA1,GGGAAUUCCGCGUGUGCGCCGCGGAAGACGUUGGAAGGAUAGAUACCUGGAAUGCUG,RNA,Lysozyme,protein,5.0,nM,UTexas,,known_or_reported,
+APT013_VAR01,Lys-RNA1-candidate-v1,GGGAAUUCCGGGUGUGCGCUGCGGAAGACGUUGGAAGGAUAGAUACCUGGAAUGCUG,RNA,Lysozyme,protein,,,exploratory_variant,,in_silico_variant,APT013
+APT013_VAR02,Lys-RNA1-candidate-v2,GGGAAUUCCGCGUGUGCUCCGCGGAAGACGCUGGAAGGAUAGAUACCUGGAAUGCUG,RNA,Lysozyme,protein,,,exploratory_variant,,in_silico_variant,APT013
+APT014,SA-apt1,GGTGGTGGGGGGGTAGTCTTCTTTGGGTTGGTGTGGTTGG,DNA,Streptavidin,protein,50.0,nM,AptaDB,,known_or_reported,
+APT014_VAR01,SA-apt1-candidate-v1,GGTGGTGGGGTGGTAGTCTCCTTTGGGTTGGTGTGGTTGG,DNA,Streptavidin,protein,,,exploratory_variant,,in_silico_variant,APT014
+APT014_VAR02,SA-apt1-candidate-v2,GGTGGTGGGGGGGTAGTGTTCTTTGGGTTGATGTGGTTGG,DNA,Streptavidin,protein,,,exploratory_variant,,in_silico_variant,APT014
+APT015,SA-RNA,ACCGACCAGAAUUCAUACCACCCUGCAGGUACCGUAACAGACU,RNA,Streptavidin,protein,70.0,nM,Ribocentre,,known_or_reported,
+APT015_VAR01,SA-RNA-candidate-v1,ACCGACCAGACUUCAUACCGCCCUGCAGGUACCGUAACAGACU,RNA,Streptavidin,protein,,,exploratory_variant,,in_silico_variant,APT015
+APT015_VAR02,SA-RNA-candidate-v2,ACCGACCAGAAUUCAUAGCACCCUGCAGGUGCCGUAACAGACU,RNA,Streptavidin,protein,,,exploratory_variant,,in_silico_variant,APT015
+APT016,IGA3,GGTGGTGGGGGGGGTTATTCAAGCCGATCTCTGAACCTGTCCT,DNA,Insulin,protein,12.0,nM,AptaDB,10.1016/j.bios.2012.11.015,known_or_reported,
+APT016_VAR01,IGA3-candidate-v1,GGTGGTGGGGTGGGTTATTTAAGCCGATCTCTGAACCTGTCCT,DNA,Insulin,protein,,,exploratory_variant,,in_silico_variant,APT016
+APT016_VAR02,IGA3-candidate-v2,GGTGGTGGGGGGGGTTAATCAAGCCGATCTTTGAACCTGTCCT,DNA,Insulin,protein,,,exploratory_variant,,in_silico_variant,APT016
+APT017,Ins-SL1,ACAGCUUGAUACUGAUUUCACCAUUUGUUCAGUAAGCUGCCC,RNA,Insulin,protein,,nM,UTexas,,known_or_reported,
+APT017_VAR01,Ins-SL1-candidate-v1,ACAGCUUGAUCCUGAUUUCGCCAUUUGUUCAGUAAGCUGCCC,RNA,Insulin,protein,,,exploratory_variant,,in_silico_variant,APT017
+APT017_VAR02,Ins-SL1-candidate-v2,ACAGCUUGAUACUGAUUACACCAUUUGUUCGGUAAGCUGCCC,RNA,Insulin,protein,,,exploratory_variant,,in_silico_variant,APT017
+APT018,VR11,TGGATGGGATGGATAGGATGTGTGGGTGTCGG,DNA,TNF-alpha,protein,7.0,nM,AptaDB,10.1016/j.ab.2013.09.018,known_or_reported,
+APT018_VAR01,VR11-candidate-v1,TGGATGGGATTGATAGGATATGTGGGTGTCGG,DNA,TNF-alpha,protein,,,exploratory_variant,,in_silico_variant,APT018
+APT018_VAR02,VR11-candidate-v2,TGGACGGGATGGATAGGCTGTGTGGGTGTCGG,DNA,TNF-alpha,protein,,,exploratory_variant,,in_silico_variant,APT018
+APT019,TNF-apt2,GCCTGTAATGGGAGGGGTGGGTAGGTGTCAGCCAGC,DNA,TNF-alpha,protein,3.2,nM,Apta-Index,,known_or_reported,
+APT019_VAR01,TNF-apt2-candidate-v1,GCCTGTAATGTGAGGGGTGAGTAGGTGTCAGCCAGC,DNA,TNF-alpha,protein,,,exploratory_variant,,in_silico_variant,APT019
+APT019_VAR02,TNF-apt2-candidate-v2,GCCTGTAATGGGAGGGGAGGGTAGGTGTCAACCAGC,DNA,TNF-alpha,protein,,,exploratory_variant,,in_silico_variant,APT019
+APT020,IFNg-apt1,GGGGTTGGTTGTGTTGGGTGTGGTGGGGTGGGATTG,DNA,Interferon-gamma,protein,1.8,nM,AptaDB,,known_or_reported,
+APT020_VAR01,IFNg-apt1-candidate-v1,GGGGTTGGTTTTGTTGGGTATGGTGGGGTGGGATTG,DNA,Interferon-gamma,protein,,,exploratory_variant,,in_silico_variant,APT020
+APT020_VAR02,IFNg-apt1-candidate-v2,GGGGTTGGTTGTGTTGGTTGTGGTGGGGTGAGATTG,DNA,Interferon-gamma,protein,,,exploratory_variant,,in_silico_variant,APT020
+APT021,IFNg-R1,UUCCCGCCAUAGAAUCAUGCCAUUUUGUUGUUAAUUUUUUGGA,RNA,Interferon-gamma,protein,10.0,nM,UTexas,,known_or_reported,
+APT021_VAR01,IFNg-R1-candidate-v1,UUCCCGCCAUCGAAUCAUGUCAUUUUGUUGUUAAUUUUUUGGA,RNA,Interferon-gamma,protein,,,exploratory_variant,,in_silico_variant,APT021
+APT021_VAR02,IFNg-R1-candidate-v2,UUCCCGCCAUAGAAUCAAGCCAUUUUGUUGCUAAUUUUUUGGA,RNA,Interferon-gamma,protein,,,exploratory_variant,,in_silico_variant,APT021
+APT022,EGF-apt1,ATCGATCGATCGATCGATCGGGGTGGGGTGGGGCGATCGATCG,DNA,EGF,protein,50.0,nM,Ribocentre,,known_or_reported,
+APT022_VAR01,EGF-apt1-candidate-v1,ATCGATCGATGGATCGATCAGGGTGGGGTGGGGCGATCGATCG,DNA,EGF,protein,,,exploratory_variant,,in_silico_variant,APT022
+APT022_VAR02,EGF-apt1-candidate-v2,ATCGATCGATCGATCGAACGGGGTGGGGTGAGGCGATCGATCG,DNA,EGF,protein,,,exploratory_variant,,in_silico_variant,APT022
+APT023,CL4,GCCUUAGUAACGUGCUUUGAUGUCGAUUCGACAGGAGGC,RNA,EGFR,protein,10.0,nM,AptaDB,10.1158/1535-7163.MCT-11-0532,known_or_reported,
+APT023_VAR01,CL4-candidate-v1,GCCUUAGUAAGGUGCUUUGGUGUCGAUUCGACAGGAGGC,RNA,EGFR,protein,,,exploratory_variant,,in_silico_variant,APT023
+APT023_VAR02,CL4-candidate-v2,GCCUUAGUAACGUGCUUAGAUGUCGAUUCGGCAGGAGGC,RNA,EGFR,protein,,,exploratory_variant,,in_silico_variant,APT023
+APT024,E07,AUCGAUUGAUUGACAGCGGGUGGGCAACGAAUUGACAUCGAU,RNA,EGFR,protein,2.4,nM,AptaDB,,known_or_reported,
+APT024_VAR01,E07-candidate-v1,AUCGAUUGAUAGACAGCGGAUGGGCAACGAAUUGACAUCGAU,RNA,EGFR,protein,,,exploratory_variant,,in_silico_variant,APT024
+APT024_VAR02,E07-candidate-v2,AUCGAUUGAUUGACAGCUGGUGGGCAACGAGUUGACAUCGAU,RNA,EGFR,protein,,,exploratory_variant,,in_silico_variant,APT024
+APT025,PSA-apt1,TATTCAATTGATGGGGTGGGGGTGGTATCCATCTTTGTAG,DNA,PSA,protein,5.0,nM,AptaDB,10.1016/j.talanta.2012.04.061,known_or_reported,
+APT025_VAR01,PSA-apt1-candidate-v1,TATTCAATTGCTGGGGTGGAGGTGGTATCCATCTTTGTAG,DNA,PSA,protein,,,exploratory_variant,,in_silico_variant,APT025
+APT025_VAR02,PSA-apt1-candidate-v2,TATTCAATTGATGGGGTTGGGGTGGTATCCGTCTTTGTAG,DNA,PSA,protein,,,exploratory_variant,,in_silico_variant,APT025
+APT026,PSA-apt2,AATTAAAGCTCGCCATCAAATAGCTGGGGGGTGGCTG,DNA,PSA,protein,20.0,nM,UTexas,,known_or_reported,
+APT026_VAR01,PSA-apt2-candidate-v1,AATTAAAGCTGGCCATCAAGTAGCTGGGGGGTGGCTG,DNA,PSA,protein,,,exploratory_variant,,in_silico_variant,APT026
+APT026_VAR02,PSA-apt2-candidate-v2,AATTAAAGCTCGCCATCCAATAGCTGGGGGATGGCTG,DNA,PSA,protein,,,exploratory_variant,,in_silico_variant,APT026
+APT027,CRP-apt1,CGAAGGGGATTCGAGGGGTGATTGCGTGCTCCATTTGGTG,DNA,C-reactive protein,protein,3.5,nM,AptaDB,,known_or_reported,
+APT027_VAR01,CRP-apt1-candidate-v1,CGAAGGGGATACGAGGGGTAATTGCGTGCTCCATTTGGTG,DNA,C-reactive protein,protein,,,exploratory_variant,,in_silico_variant,APT027
+APT027_VAR02,CRP-apt1-candidate-v2,CGAAGGGGATTCGAGGGTTGATTGCGTGCTTCATTTGGTG,DNA,C-reactive protein,protein,,,exploratory_variant,,in_silico_variant,APT027
+APT028,CRP-R40,GGCAGGAAGACAAACAGCCAGCGTGACAGCGACGCGGGGCUGUUUUG,RNA,C-reactive protein,protein,15.0,nM,Ribocentre,,known_or_reported,
+APT028_VAR01,CRP-R40-candidate-v1,GGCAGGAAGAGAAACAGCCGGCGTGACAGCGACGCGGGGCUGUUUUG,RNA,C-reactive protein,protein,,,exploratory_variant,,in_silico_variant,APT028
+APT028_VAR02,CRP-R40-candidate-v2,GGCAGGAAGACAAACAGGCAGCGTGACAGCAACGCGGGGCUGUUUUG,RNA,C-reactive protein,protein,,,exploratory_variant,,in_silico_variant,APT028
+APT029,PCSK9-apt1,GGGAGGACGAUGCGGCAGUGGGGGCAGUCCUUCGUAGAUAGC,RNA,PCSK9,protein,5.0,nM,AptaDB,,known_or_reported,
+APT029_VAR01,PCSK9-apt1-candidate-v1,GGGAGGACGAAGCGGCAGUAGGGGCAGUCCUUCGUAGAUAGC,RNA,PCSK9,protein,,,exploratory_variant,,in_silico_variant,APT029
+APT029_VAR02,PCSK9-apt1-candidate-v2,GGGAGGACGAUGCGGCAUUGGGGGCAGUCCCUCGUAGAUAGC,RNA,PCSK9,protein,,,exploratory_variant,,in_silico_variant,APT029
+APT030,HER2-apt1,GCAGCGGTGTGGGGGCAGCGGTGTGGGGGCAATCG,DNA,HER2,protein,18.9,nM,AptaDB,10.1093/nar/gks1032,known_or_reported,
+APT030_VAR01,HER2-apt1-candidate-v1,GCAGCGGTGTTGGGGCAGCAGTGTGGGGGCAATCG,DNA,HER2,protein,,,exploratory_variant,,in_silico_variant,APT030
+APT030_VAR02,HER2-apt1-candidate-v2,GCAGCGGTGTGGGGGCATCGGTGTGGGGGCGATCG,DNA,HER2,protein,,,exploratory_variant,,in_silico_variant,APT030
+APT031,HER2-SE15,AACCGCCCAAAUCCCCCAGCUUGCCCAUAGCCUUUCAUAGCCC,RNA,HER2,protein,0.4,nM,UTexas,,known_or_reported,
+APT031_VAR01,HER2-SE15-candidate-v1,AACCGCCCAACUCCCCCAGUUUGCCCAUAGCCUUUCAUAGCCC,RNA,HER2,protein,,,exploratory_variant,,in_silico_variant,APT031
+APT031_VAR02,HER2-SE15-candidate-v2,AACCGCCCAAAUCCCCCCGCUUGCCCAUAGUCUUUCAUAGCCC,RNA,HER2,protein,,,exploratory_variant,,in_silico_variant,APT031
+APT032,AS1411,GGTGGTGGTGGTTGTGGTGGTGGTGG,DNA,Nucleolin,protein,2.0,nM,AptaDB,10.1074/jbc.M608463200,known_or_reported,
+APT032_VAR01,AS1411-candidate-v1,GGTGGTGGTGTTTGTGGTGATGGTGG,DNA,Nucleolin,protein,,,exploratory_variant,,in_silico_variant,APT032
+APT032_VAR02,AS1411-candidate-v2,GGTGGTGGTGATTGTGGAGGTGGTGG,DNA,Nucleolin,protein,,,exploratory_variant,,in_silico_variant,APT032
+APT033,AS1411-v2,GGTGGTGGTGGTGGTGGTGGTGG,DNA,Nucleolin,protein,5.0,nM,Apta-Index,,known_or_reported,
+APT033_VAR01,AS1411-v2-candidate-v1,GGTGGTGGTGTTGGTGGTGATGG,DNA,Nucleolin,protein,,,exploratory_variant,,in_silico_variant,APT033
+APT033_VAR02,AS1411-v2-candidate-v2,GGTGGTGGTGGTGATGGAGGTGG,DNA,Nucleolin,protein,,,exploratory_variant,,in_silico_variant,APT033
+APT034,OPN-R3,CGGCCACAGAAUGAAAAACCUCAUCGAUGUUGCAUAGUUG,RNA,Osteopontin,protein,18.0,nM,AptaDB,,known_or_reported,
+APT034_VAR01,OPN-R3-candidate-v1,CGGCCACAGACUGAAAAACUUCAUCGAUGUUGCAUAGUUG,RNA,Osteopontin,protein,,,exploratory_variant,,in_silico_variant,APT034
+APT034_VAR02,OPN-R3-candidate-v2,CGGCCACAGAAUGAAAACCCUCAUCGAUGUCGCAUAGUUG,RNA,Osteopontin,protein,,,exploratory_variant,,in_silico_variant,APT034
+APT035,MUC1-apt,GCAGTTGATCCTTTGGATACCCTGG,DNA,MUC1,protein,47.3,nM,AptaDB,,known_or_reported,
+APT035_VAR01,MUC1-apt-candidate-v1,GCAGTTGATCGTTTGGATATCCTGG,DNA,MUC1,protein,,,exploratory_variant,,in_silico_variant,APT035
+APT035_VAR02,MUC1-apt-candidate-v2,GCAGTTGATCCCTTGGAAACCCTGG,DNA,MUC1,protein,,,exploratory_variant,,in_silico_variant,APT035
+APT036,Tf-apt1,AAUGGGCGAUAGGUGGUGCAAGGUAACCCCGGGCCCAUCGG,RNA,Transferrin,protein,25.0,nM,UTexas,,known_or_reported,
+APT036_VAR01,Tf-apt1-candidate-v1,AAUGGGCGAUCGGUGGUGCGAGGUAACCCCGGGCCCAUCGG,RNA,Transferrin,protein,,,exploratory_variant,,in_silico_variant,APT036
+APT036_VAR02,Tf-apt1-candidate-v2,AAUGGGCGAUAGGUGGUUCAAGGUAACCCCAGGCCCAUCGG,RNA,Transferrin,protein,,,exploratory_variant,,in_silico_variant,APT036
+APT037,HSA-apt1,TGCGATGACAGCGCTTGACGATTGTCGTCGCATGA,DNA,Human serum albumin,protein,100.0,nM,AptaDB,,known_or_reported,
+APT037_VAR01,HSA-apt1-candidate-v1,TGCGATGACATCGCTTGACAATTGTCGTCGCATGA,DNA,Human serum albumin,protein,,,exploratory_variant,,in_silico_variant,APT037
+APT037_VAR02,HSA-apt1-candidate-v2,TGCGATGACAGCGCTTGCCGATTGTCGTCGTATGA,DNA,Human serum albumin,protein,,,exploratory_variant,,in_silico_variant,APT037
+APT038,HSA-apt2,GGCGUAGUGGAUUGCGUAGCAGGUGCAGCCGAUCGCC,RNA,Human serum albumin,protein,200.0,nM,Ribocentre,,known_or_reported,
+APT038_VAR01,HSA-apt2-candidate-v1,GGCGUAGUGGCUUGCGUAGUAGGUGCAGCCGAUCGCC,RNA,Human serum albumin,protein,,,exploratory_variant,,in_silico_variant,APT038
+APT038_VAR02,HSA-apt2-candidate-v2,GGCGUAGUGGAUUGCGUCGCAGGUGCAGCCAAUCGCC,RNA,Human serum albumin,protein,,,exploratory_variant,,in_silico_variant,APT038
+APT039,IL6-apt1,GGTGGGTGGGGATTGGCCCAATCAGAGAGGTAGCCC,DNA,Interleukin-6,protein,12.0,nM,AptaDB,,known_or_reported,
+APT039_VAR01,IL6-apt1-candidate-v1,GGTGGGTGGGTATTGGCCCGATCAGAGAGGTAGCCC,DNA,Interleukin-6,protein,,,exploratory_variant,,in_silico_variant,APT039
+APT039_VAR02,IL6-apt1-candidate-v2,GGTGGGTGGGGATTGGCGCAATCAGAGAGGCAGCCC,DNA,Interleukin-6,protein,,,exploratory_variant,,in_silico_variant,APT039
+APT040,IL6-R1,GGGAGAAUUCCGACCAGAAGGGUUAGCAGUCGGCAUGCCGUACC,RNA,Interleukin-6,protein,0.2,nM,UTexas,,known_or_reported,
+APT040_VAR01,IL6-R1-candidate-v1,GGGAGAAUUCGGACCAGAAAGGUUAGCAGUCGGCAUGCCGUACC,RNA,Interleukin-6,protein,,,exploratory_variant,,in_silico_variant,APT040
+APT040_VAR02,IL6-R1-candidate-v2,GGGAGAAUUCCGACCAGCAGGGUUAGCAGUUGGCAUGCCGUACC,RNA,Interleukin-6,protein,,,exploratory_variant,,in_silico_variant,APT040
+APT041,CTLA4-apt1,GCCGGUAGUGGUGGGUAAGUGGCUGGGCGUUAGCGGUGCC,RNA,CTLA-4,protein,30.0,nM,AptaDB,,known_or_reported,
+APT041_VAR01,CTLA4-apt1-candidate-v1,GCCGGUAGUGUUGGGUAAGCGGCUGGGCGUUAGCGGUGCC,RNA,CTLA-4,protein,,,exploratory_variant,,in_silico_variant,APT041
+APT041_VAR02,CTLA4-apt1-candidate-v2,GCCGGUAGUGGUGGGUACGUGGCUGGGCGUCAGCGGUGCC,RNA,CTLA-4,protein,,,exploratory_variant,,in_silico_variant,APT041
+APT042,PDL1-apt1,ACGGGCCACATCAACTCATTGATAGACAATGCGTCCACTGCCCGT,DNA,PD-L1,protein,4.7,nM,AptaDB,,known_or_reported,
+APT042_VAR01,PDL1-apt1-candidate-v1,ACGGGCCACAACAACTCATCGATAGACAATGCGTCCACTGCCCGT,DNA,PD-L1,protein,,,exploratory_variant,,in_silico_variant,APT042
+APT042_VAR02,PDL1-apt1-candidate-v2,ACGGGCCACATCAACTCCTTGATAGACAATACGTCCACTGCCCGT,DNA,PD-L1,protein,,,exploratory_variant,,in_silico_variant,APT042
+APT043,PDL1-apt2,GGAUGCCCAAGAUGAAAUCCAAGCGCAAGCUUGUACUCAUCC,RNA,PD-L1,protein,2.0,nM,Ribocentre,,known_or_reported,
+APT043_VAR01,PDL1-apt2-candidate-v1,GGAUGCCCAAUAUGAAAUCUAAGCGCAAGCUUGUACUCAUCC,RNA,PD-L1,protein,,,exploratory_variant,,in_silico_variant,APT043
+APT043_VAR02,PDL1-apt2-candidate-v2,GGAUGCCCAAGAUGAAAACCAAGCGCAAGCCUGUACUCAUCC,RNA,PD-L1,protein,,,exploratory_variant,,in_silico_variant,APT043
+APT044,CD20-apt1,GGCAGTGGTTGGGGGGGATCCTGTATATGTCCTGCC,DNA,CD20,protein,60.0,nM,UTexas,,known_or_reported,
+APT044_VAR01,CD20-apt1-candidate-v1,GGCAGTGGTTTGGGGGGATTCTGTATATGTCCTGCC,DNA,CD20,protein,,,exploratory_variant,,in_silico_variant,APT044
+APT044_VAR02,CD20-apt1-candidate-v2,GGCAGTGGTTGGGGGGGCTCCTGTATATGTTCTGCC,DNA,CD20,protein,,,exploratory_variant,,in_silico_variant,APT044
+APT045,Fib-apt1,ACATTGATCGGTGTGGGGTTGGACATCCATATCGCTCTGAATG,DNA,Fibrinogen,protein,40.0,nM,AptaDB,,known_or_reported,
+APT045_VAR01,Fib-apt1-candidate-v1,ACATTGATCGTTGTGGGGTCGGACATCCATATCGCTCTGAATG,DNA,Fibrinogen,protein,,,exploratory_variant,,in_silico_variant,APT045
+APT045_VAR02,Fib-apt1-candidate-v2,ACATTGATCGGTGTGGGTTTGGACATCCATGTCGCTCTGAATG,DNA,Fibrinogen,protein,,,exploratory_variant,,in_silico_variant,APT045
+APT046,Try-apt1,CCGTCAATGGGCAGAGGTCTAATATCCCTATGTGGCACG,DNA,Trypsin,protein,,nM,Apta-Index,,known_or_reported,
+APT046_VAR01,Try-apt1-candidate-v1,CCGTCAATGGTCAGAGGTCCAATATCCCTATGTGGCACG,DNA,Trypsin,protein,,,exploratory_variant,,in_silico_variant,APT046
+APT046_VAR02,Try-apt1-candidate-v2,CCGTCAATGGGCAGAGGACTAATATCCCTACGTGGCACG,DNA,Trypsin,protein,,,exploratory_variant,,in_silico_variant,APT046
+APT047,C5-apt1,GCCUUAGUAACGUGCUUUGAUGUCGAUUCGACAGGAGGC,RNA,Complement C5,protein,2.0,nM,AptaDB,,known_or_reported,
+APT047_VAR01,C5-apt1-candidate-v1,GCCUUAGUAAGGUGCUUUGGUGUCGAUUCGACAGGAGGC,RNA,Complement C5,protein,,,exploratory_variant,,in_silico_variant,APT047
+APT047_VAR02,C5-apt1-candidate-v2,GCCUUAGUAACGUGCUUAGAUGUCGAUUCGGCAGGAGGC,RNA,Complement C5,protein,,,exploratory_variant,,in_silico_variant,APT047
+APT048,PrP-apt1,GGGAGACATGTTACTTGGGGTGGGTGGGATCGTCAGCTTGTCCC,DNA,Prion protein,protein,25.0,nM,AptaDB,,known_or_reported,
+APT048_VAR01,PrP-apt1-candidate-v1,GGGAGACATGATACTTGGGATGGGTGGGATCGTCAGCTTGTCCC,DNA,Prion protein,protein,,,exploratory_variant,,in_silico_variant,APT048
+APT048_VAR02,PrP-apt1-candidate-v2,GGGAGACATGTTACTTGTGGTGGGTGGGATTGTCAGCTTGTCCC,DNA,Prion protein,protein,,,exploratory_variant,,in_silico_variant,APT048
+APT049,PDGF-A-apt1,CAGGGGCACGTTAAGTCATGATCCTGTTTGATCCCCTG,DNA,PDGF-AA,protein,0.3,nM,UTexas,,known_or_reported,
+APT049_VAR01,PDGF-A-apt1-candidate-v1,CAGGGGCACGATAAGTCATAATCCTGTTTGATCCCCTG,DNA,PDGF-AA,protein,,,exploratory_variant,,in_silico_variant,APT049
+APT049_VAR02,PDGF-A-apt1-candidate-v2,CAGGGGCACGTTAAGTCCTGATCCTGTTTGGTCCCCTG,DNA,PDGF-AA,protein,,,exploratory_variant,,in_silico_variant,APT049
+APT050,Elast-apt1,UAGCAACCUACAAGCCGAUUACGGGAGAGCGCCCAGAUAUCC,RNA,Neutrophil elastase,protein,,nM,AptaDB,,known_or_reported,
+APT050_VAR01,Elast-apt1-candidate-v1,UAGCAACCUAGAAGCCGAUCACGGGAGAGCGCCCAGAUAUCC,RNA,Neutrophil elastase,protein,,,exploratory_variant,,in_silico_variant,APT050
+APT050_VAR02,Elast-apt1-candidate-v2,UAGCAACCUACAAGCCGCUUACGGGAGAGCACCCAGAUAUCC,RNA,Neutrophil elastase,protein,,,exploratory_variant,,in_silico_variant,APT050
+APT051,AFP-apt1,GTGACGCTCCTAACGCTGACTCAGGTGCAGTTCTCGACTCGTCTG,DNA,Alpha-fetoprotein,protein,8.0,nM,AptaDB,,known_or_reported,
+APT051_VAR01,AFP-apt1-candidate-v1,GTGACGCTCCAAACGCTGATTCAGGTGCAGTTCTCGACTCGTCTG,DNA,Alpha-fetoprotein,protein,,,exploratory_variant,,in_silico_variant,APT051
+APT051_VAR02,AFP-apt1-candidate-v2,GTGACGCTCCTAACGCTTACTCAGGTGCAGCTCTCGACTCGTCTG,DNA,Alpha-fetoprotein,protein,,,exploratory_variant,,in_silico_variant,APT051
+APT052,Ang2-apt1,AUACCAGCUUAUUCAAUUGGAGGGGUGGGAUAUCACUUAUUAUAC,RNA,Angiopoietin-2,protein,3.1,nM,AptaDB,,known_or_reported,
+APT052_VAR01,Ang2-apt1-candidate-v1,AUACCAGCUUCUUCAAUUGAAGGGGUGGGAUAUCACUUAUUAUAC,RNA,Angiopoietin-2,protein,,,exploratory_variant,,in_silico_variant,APT052
+APT052_VAR02,Ang2-apt1-candidate-v2,AUACCAGCUUAUUCAAUAGGAGGGGUGGGACAUCACUUAUUAUAC,RNA,Angiopoietin-2,protein,,,exploratory_variant,,in_silico_variant,APT052
+APT053,cTnI-apt1,CGTGCAGTACGCCAACCTTTCTCATGCGCTGCCCCTCTTAG,DNA,Cardiac troponin I,protein,60.0,nM,AptaDB,,known_or_reported,
+APT053_VAR01,cTnI-apt1-candidate-v1,CGTGCAGTACTCCAACCTTCCTCATGCGCTGCCCCTCTTAG,DNA,Cardiac troponin I,protein,,,exploratory_variant,,in_silico_variant,APT053
+APT053_VAR02,cTnI-apt1-candidate-v2,CGTGCAGTACGCCAACCATTCTCATGCGCTACCCCTCTTAG,DNA,Cardiac troponin I,protein,,,exploratory_variant,,in_silico_variant,APT053
+APT054,Hb-apt1,GGGTAGGGCGGGTTGGGAAATGGGAATTCGAGCTGAGCCCC,DNA,Hemoglobin,protein,,nM,Ribocentre,,known_or_reported,
+APT054_VAR01,Hb-apt1-candidate-v1,GGGTAGGGCGTGTTGGGAAGTGGGAATTCGAGCTGAGCCCC,DNA,Hemoglobin,protein,,,exploratory_variant,,in_silico_variant,APT054
+APT054_VAR02,Hb-apt1-candidate-v2,GGGTAGGGCGGGTTGGGCAATGGGAATTCGGGCTGAGCCCC,DNA,Hemoglobin,protein,,,exploratory_variant,,in_silico_variant,APT054
+APT055,FGF2-apt1,GGGAUAGAUACCAACGCCACUAUAGCGAGAAUCCGAAGCUCC,RNA,FGF2,protein,0.35,nM,AptaDB,,known_or_reported,
+APT055_VAR01,FGF2-apt1-candidate-v1,GGGAUAGAUAGCAACGCCAUUAUAGCGAGAAUCCGAAGCUCC,RNA,FGF2,protein,,,exploratory_variant,,in_silico_variant,APT055
+APT055_VAR02,FGF2-apt1-candidate-v2,GGGAUAGAUACCAACGCGACUAUAGCGAGAGUCCGAAGCUCC,RNA,FGF2,protein,,,exploratory_variant,,in_silico_variant,APT055

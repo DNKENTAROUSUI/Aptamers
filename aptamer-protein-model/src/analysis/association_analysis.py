@@ -25,7 +25,7 @@ def merge_features(pairs: pd.DataFrame, aptamer: pd.DataFrame, protein: pd.DataF
 
 
 def data_overview(pairs: pd.DataFrame) -> dict[str, object]:
-    return {
+    overview = {
         "aptamer_count": int(pairs["aptamer_id"].nunique()),
         "target_count": int(pairs["target_name"].nunique()),
         "nucleic_acid_type_counts": pairs["nucleic_acid_type"].fillna("unknown").value_counts().to_dict(),
@@ -33,6 +33,9 @@ def data_overview(pairs: pd.DataFrame) -> dict[str, object]:
         "source_database_counts": pairs["source_database"].fillna("unknown").value_counts().to_dict(),
         "missing_values": pairs.isna().sum().to_dict(),
     }
+    if "candidate_status" in pairs.columns:
+        overview["candidate_status_counts"] = pairs["candidate_status"].fillna("unknown").value_counts().to_dict()
+    return overview
 
 
 def association_tests(df: pd.DataFrame, protein_group_col: str) -> pd.DataFrame:
@@ -125,9 +128,10 @@ def write_report(
 - DNA/RNA比率: {overview.get('nucleic_acid_type_counts')}
 - Kd値あり: {overview.get('kd_available_count')}
 - データベース別件数: {overview.get('source_database_counts')}
+- 候補ステータス別件数: {overview.get('candidate_status_counts', '列なし')}
 
 ## 3. データ取得方法
-MVPではローカルCSVを優先する。タンパク質配列はローカルFASTA、または `--fetch-uniprot` 指定時にUniProt REST APIから取得する。
+MVPではローカルCSVを優先する。タンパク質配列はローカルFASTA、または `--fetch-uniprot` 指定時にUniProt REST APIから取得する。`in_silico_variant` は既知結合の正例ではなく、探索用の派生候補として扱う。
 
 ## 4. アプタマー特徴量
 配列長、塩基割合、GC含量、purine/pyrimidine割合、G/C連続長、1-3 mer頻度、G4様スコア、G-run、MFE、paired base fraction、stem/loop特徴を計算した。
@@ -160,7 +164,7 @@ Fisher exact test summary:
 {model_summary}
 
 ## 11. 限界
-この結果は既知の正例データに基づく探索的解析であり、非結合を直接予測するものではない。外部DB由来データには選択バイアス、表記揺れ、Kd条件差、配列切り出し差がある。二次構造は予測であり、実験的検証が必要である。
+この結果は既知の正例データと探索用派生候補に基づく解析であり、非結合を直接予測するものではない。`in_silico_variant` は実験的に結合確認された配列ではない。外部DB由来データには選択バイアス、表記揺れ、Kd条件差、配列切り出し差がある。二次構造は予測であり、実験的検証が必要である。
 
 ## 12. 次にやるべきこと
 データソースを拡充し、標的名の正規化とUniProt accession対応を改善する。測定条件を標準化し、負例または候補集合を設計したうえで、独立テストセットによる予測性能評価を行う。

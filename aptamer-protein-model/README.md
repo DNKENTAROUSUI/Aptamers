@@ -21,9 +21,18 @@ aptamer_id,aptamer_name,sequence,nucleic_acid_type,target_name,target_type,kd_va
 
 まず `target_type == protein` の行だけを使います。すぐ試せる拡張seedとして `data/raw/aptamers_literature_seed.csv` を同梱しています。これは55件のアプタマー-タンパク質候補ペアを含み、最初の5件だけの小さい動作確認用CSVより解析向きです。
 
+候補数をさらに増やす場合は、seed配列から決定論的な点変異候補を作れます。これは未知候補探索用であり、既知結合の正例としては扱わないでください。
+
+```bash
+python -m src.data.augment_aptamer_candidates \
+  --input data/raw/aptamers_literature_seed.csv \
+  --output data/raw/aptamers_candidate_expanded.csv \
+  --variants-per-seed 2
+```
+
 ```bash
 python -m src.data.load_aptamer_data \
-  --input data/raw/aptamers_literature_seed.csv \
+  --input data/raw/aptamers_candidate_expanded.csv \
   --output data/processed/aptamer_protein_pairs_clean.csv
 
 python -m src.features.aptamer_features \
@@ -113,6 +122,8 @@ G4様特徴量として、G-richness、G-skewness、G4Hunter風スコア、G-qua
 MVPではローカルCSVから既知の正例を読み込み、アプタマーとタンパク質の特徴量化、クロス集計、ヒートマップ、Fisher exact test/chi-square test、FDR補正、Markdownレポートを作成します。モデル学習はデータ数が十分な場合だけ実行されます。
 
 同梱の `aptamers_literature_seed.csv` は解析パイプライン検証用のseedデータです。引用・単位・配列修飾の表記は今後の外部DB連携で精査する前提で、最終的な研究利用では元論文または公式DBで再確認してください。
+
+`aptamers_candidate_expanded.csv` は `candidate_status=in_silico_variant` を含む探索候補データです。モデルや可視化UIの候補数を増やす目的では便利ですが、実験的な結合確認済みデータではありません。
 
 ## 今後の拡張案
 

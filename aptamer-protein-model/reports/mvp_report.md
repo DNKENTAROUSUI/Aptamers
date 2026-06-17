@@ -4,14 +4,15 @@
 既知のタンパク質結合アプタマー正例から、アプタマー配列・構造様特徴とタンパク質物性・機能グループの関係を探索的に解析する。
 
 ## 2. 使用データ
-- アプタマー数: 55
+- アプタマー数: 162
 - タンパク質標的数: 36
-- DNA/RNA比率: {'DNA': 35, 'RNA': 20}
-- Kd値あり: 51
-- データベース別件数: {'AptaDB': 32, 'UTexas': 11, 'Ribocentre': 7, 'Apta-Index': 5}
+- DNA/RNA比率: {'DNA': 102, 'RNA': 60}
+- Kd値あり: 50
+- データベース別件数: {'exploratory_variant': 108, 'AptaDB': 32, 'UTexas': 11, 'Ribocentre': 7, 'Apta-Index': 4}
+- 候補ステータス別件数: {'in_silico_variant': 108, 'known_or_reported': 54}
 
 ## 3. データ取得方法
-MVPではローカルCSVを優先する。タンパク質配列はローカルFASTA、または `--fetch-uniprot` 指定時にUniProt REST APIから取得する。
+MVPではローカルCSVを優先する。タンパク質配列はローカルFASTA、または `--fetch-uniprot` 指定時にUniProt REST APIから取得する。`in_silico_variant` は既知結合の正例ではなく、探索用の派生候補として扱う。
 
 ## 4. アプタマー特徴量
 配列長、塩基割合、GC含量、purine/pyrimidine割合、G/C連続長、1-3 mer頻度、G4様スコア、G-run、MFE、paired base fraction、stem/loop特徴を計算した。
@@ -33,38 +34,42 @@ Chi-square summary:
 
 | protein_group_column | chi2 | p_value | dof |
 | --- | --- | --- | --- |
-| charge_group | 4.185 | 0.6517 | 6 |
-| hydrophobicity_group | 7.643 | 0.2654 | 6 |
-| pI_group | 5.153 | 0.5243 | 6 |
-| functional_group | 28.44 | 0.004773 | 12 |
+| charge_group | 5.304 | 0.5054 | 6 |
+| hydrophobicity_group | 23.73 | 0.0005847 | 6 |
+| pI_group | 8.897 | 0.1795 | 6 |
+| functional_group | 85.1 | 4.36e-13 | 12 |
 
 Fisher exact test summary:
 
 | protein_group_column | aptamer_structure_group | protein_group | count_in_cell | odds_ratio | p_value | p_value_fdr_bh |
 | --- | --- | --- | --- | --- | --- | --- |
-| functional_group | stem_loop_like | nucleic_acid_binding_protein | 0 | 0 | 0.01886 | 0.198 |
-| functional_group | other_or_uncertain | nucleic_acid_binding_protein | 2 | inf | 0.0101 | 0.198 |
-| hydrophobicity_group | stem_loop_like | intermediate | 19 | inf | 0.0316 | 0.2844 |
-| hydrophobicity_group | other_or_uncertain | intermediate | 0 | 0 | 0.06336 | 0.2851 |
-| functional_group | other_or_uncertain | receptor | 2 | 11.75 | 0.05464 | 0.3825 |
-| functional_group | stem_loop_like | membrane_protein | 15 | inf | 0.09095 | 0.406 |
-| functional_group | stem_loop_like | receptor | 2 | 0.1333 | 0.09667 | 0.406 |
-| hydrophobicity_group | other_or_uncertain | hydrophilic_like | 3 | 3.955 | 0.1656 | 0.4967 |
-| functional_group | other_or_uncertain | membrane_protein | 0 | 0 | 0.1734 | 0.5203 |
-| functional_group | G4_and_stem_loop_like | other_or_unknown | 2 | inf | 0.1704 | 0.5203 |
-| hydrophobicity_group | stem_loop_like | hydrophilic_like | 11 | 0.3929 | 0.3564 | 0.5346 |
-| hydrophobicity_group | stem_loop_like | hydrophobic_like | 9 | 0.3 | 0.3188 | 0.5346 |
-| hydrophobicity_group | G4_and_stem_loop_like | hydrophobic_like | 1 | inf | 0.2667 | 0.5346 |
-| hydrophobicity_group | other_or_uncertain | hydrophobic_like | 2 | 2 | 0.5981 | 0.769 |
-| pI_group | other_or_uncertain | neutral_pI | 0 | 0 | 0.3131 | 0.8 |
-| pI_group | stem_loop_like | basic_pI | 11 | 0.3929 | 0.3564 | 0.8 |
-| pI_group | G4_and_stem_loop_like | acidic_pI | 1 | inf | 0.4444 | 0.8 |
-| pI_group | other_or_uncertain | basic_pI | 3 | 3.955 | 0.1656 | 0.8 |
-| pI_group | stem_loop_like | neutral_pI | 11 | inf | 0.3111 | 0.8 |
-| charge_group | stem_loop_like | positive_charge_like | 11 | 0.3929 | 0.3564 | 1 |
+| functional_group | other_or_uncertain | nucleic_acid_binding_protein | 6 | inf | 7.506e-08 | 1.576e-06 |
+| functional_group | stem_loop_like | nucleic_acid_binding_protein | 0 | 0 | 8.121e-07 | 8.527e-06 |
+| hydrophobicity_group | stem_loop_like | intermediate | 57 | inf | 0.0002746 | 0.002472 |
+| hydrophobicity_group | other_or_uncertain | hydrophilic_like | 9 | 12 | 0.0005555 | 0.0025 |
+| hydrophobicity_group | other_or_uncertain | intermediate | 0 | 0 | 0.002404 | 0.007213 |
+| functional_group | stem_loop_like | membrane_protein | 45 | inf | 0.003674 | 0.02572 |
+| hydrophobicity_group | G4_and_stem_loop_like | hydrophobic_like | 3 | inf | 0.01456 | 0.02621 |
+| hydrophobicity_group | stem_loop_like | hydrophilic_like | 33 | 0.2157 | 0.01203 | 0.02621 |
+| functional_group | G4_and_stem_loop_like | other_or_unknown | 5 | inf | 0.01286 | 0.06754 |
+| functional_group | other_or_uncertain | membrane_protein | 0 | 0 | 0.02035 | 0.08546 |
+| functional_group | other_or_uncertain | other_or_unknown | 2 | 0.2225 | 0.04381 | 0.1533 |
+| pI_group | stem_loop_like | neutral_pI | 33 | inf | 0.02071 | 0.1864 |
+| pI_group | other_or_uncertain | neutral_pI | 0 | 0 | 0.06464 | 0.274 |
+| pI_group | G4_and_stem_loop_like | acidic_pI | 3 | inf | 0.09134 | 0.274 |
+| pI_group | stem_loop_like | acidic_pI | 51 | 0.4229 | 0.1621 | 0.3648 |
+| hydrophobicity_group | G4_and_stem_loop_like | intermediate | 0 | 0 | 0.2583 | 0.3875 |
+| hydrophobicity_group | stem_loop_like | hydrophobic_like | 28 | 0.56 | 0.3378 | 0.4343 |
+| functional_group | other_or_uncertain | receptor | 2 | 3.688 | 0.1553 | 0.4659 |
+| pI_group | other_or_uncertain | basic_pI | 5 | 2.132 | 0.3 | 0.54 |
+| pI_group | G4_and_stem_loop_like | basic_pI | 0 | 0 | 0.5547 | 0.5727 |
 
 自然言語サマリー:
-- FDR補正後p<0.05で明確に過剰出現する構造群とタンパク質群の組み合わせは見つかりませんでした。
+- other_or_uncertain は nucleic_acid_binding_protein (functional_group) に多い傾向があります (odds ratio=inf, FDR p=1.58e-06)。
+- stem_loop_like は intermediate (hydrophobicity_group) に多い傾向があります (odds ratio=inf, FDR p=0.00247)。
+- other_or_uncertain は hydrophilic_like (hydrophobicity_group) に多い傾向があります (odds ratio=12.00, FDR p=0.0025)。
+- stem_loop_like は membrane_protein (functional_group) に多い傾向があります (odds ratio=inf, FDR p=0.0257)。
+- G4_and_stem_loop_like は hydrophobic_like (hydrophobicity_group) に多い傾向があります (odds ratio=inf, FDR p=0.0262)。
 
 ## 10. ベースラインモデル結果
 目的変数 `hydrophobicity_group` に対して `gradient_boosting` を最良モデルとして保存した。
@@ -78,7 +83,7 @@ Fisher exact test summary:
 この結果は探索的解析であり、実験的検証が必要である。
 
 ## 11. 限界
-この結果は既知の正例データに基づく探索的解析であり、非結合を直接予測するものではない。外部DB由来データには選択バイアス、表記揺れ、Kd条件差、配列切り出し差がある。二次構造は予測であり、実験的検証が必要である。
+この結果は既知の正例データと探索用派生候補に基づく解析であり、非結合を直接予測するものではない。`in_silico_variant` は実験的に結合確認された配列ではない。外部DB由来データには選択バイアス、表記揺れ、Kd条件差、配列切り出し差がある。二次構造は予測であり、実験的検証が必要である。
 
 ## 12. 次にやるべきこと
 データソースを拡充し、標的名の正規化とUniProt accession対応を改善する。測定条件を標準化し、負例または候補集合を設計したうえで、独立テストセットによる予測性能評価を行う。

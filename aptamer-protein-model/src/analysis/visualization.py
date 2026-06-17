@@ -6,6 +6,7 @@ from pathlib import Path
 os.environ.setdefault("MPLCONFIGDIR", "/tmp/matplotlib")
 
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 
 
@@ -38,19 +39,25 @@ def save_hist(series: pd.Series, title: str, output: str | Path, bins: int = 30)
 
 def save_heatmap(table: pd.DataFrame, title: str, output: str | Path) -> None:
     Path(output).parent.mkdir(parents=True, exist_ok=True)
-    fig, ax = plt.subplots(figsize=(9, 5.5))
+    fig_width = max(9, 1.2 * max(1, len(table.columns)) + 4)
+    fig_height = max(5.5, 0.65 * max(1, len(table.index)) + 2.5)
+    fig, ax = plt.subplots(figsize=(fig_width, fig_height))
     if table.empty:
         ax.text(0.5, 0.5, "No data", ha="center", va="center")
         ax.axis("off")
     else:
-        image = ax.imshow(table.values, cmap="YlGnBu", aspect="auto")
+        values = table.values.astype(float)
+        image = ax.imshow(values, cmap="Blues", aspect="auto", vmin=0, vmax=max(1.0, float(np.nanmax(values))))
         ax.set_xticks(range(len(table.columns)))
         ax.set_xticklabels(table.columns, rotation=35, ha="right")
         ax.set_yticks(range(len(table.index)))
         ax.set_yticklabels(table.index)
+        threshold = float(np.nanmax(values)) * 0.55 if values.size else 0.0
         for i in range(table.shape[0]):
             for j in range(table.shape[1]):
-                ax.text(j, i, int(table.iloc[i, j]), ha="center", va="center", color="black")
+                value = float(table.iloc[i, j])
+                color = "white" if value > threshold else "#1f2933"
+                ax.text(j, i, int(value), ha="center", va="center", color=color, fontweight="bold")
         fig.colorbar(image, ax=ax, label="count")
     ax.set_title(title)
     fig.tight_layout()
