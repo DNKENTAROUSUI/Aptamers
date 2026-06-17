@@ -19,11 +19,11 @@ pip install -r requirements.txt
 aptamer_id,aptamer_name,sequence,nucleic_acid_type,target_name,target_type,kd_value,kd_unit,source_database,reference_doi
 ```
 
-まず `target_type == protein` の行だけを使います。
+まず `target_type == protein` の行だけを使います。すぐ試せる拡張seedとして `data/raw/aptamers_literature_seed.csv` を同梱しています。これは55件のアプタマー-タンパク質候補ペアを含み、最初の5件だけの小さい動作確認用CSVより解析向きです。
 
 ```bash
 python -m src.data.load_aptamer_data \
-  --input data/raw/aptamers.csv \
+  --input data/raw/aptamers_literature_seed.csv \
   --output data/processed/aptamer_protein_pairs_clean.csv
 
 python -m src.features.aptamer_features \
@@ -32,15 +32,23 @@ python -m src.features.aptamer_features \
 
 python -m src.features.protein_features \
   --input data/processed/aptamer_protein_pairs_clean.csv \
-  --fasta data/raw/proteins.fasta \
-  --output data/processed/protein_features.csv
+  --output data/processed/protein_features.csv \
+  --fetch-uniprot
 
 python -m src.analysis.association_analysis
 
-python -m src.models.train_baseline
+python -m src.models.train_baseline --target hydrophobicity_group
 ```
 
-サンプルデータで動かす場合:
+複数CSVを結合して動かす場合:
+
+```bash
+python -m src.data.merge_aptamer_sources \
+  --inputs data/raw/aptamers_literature_seed.csv data/raw/aptamers_example.csv \
+  --output data/processed/aptamer_protein_pairs_clean.csv
+```
+
+小さいサンプルデータで動作だけ確認する場合:
 
 ```bash
 python -m src.data.load_aptamer_data --input data/raw/aptamers_example.csv --output data/processed/aptamer_protein_pairs_clean.csv
@@ -70,7 +78,7 @@ python -m src.features.protein_features \
 - `reports/figures/protein_group_counts.png`: タンパク質電荷グループ件数
 - `reports/figures/structure_vs_protein_group_heatmap.png`: 構造群 x タンパク質群ヒートマップ
 - `reports/mvp_report.md`: 自動生成レポート
-- `models/baseline_model.pkl`: データ数が十分な場合に保存されるベースラインモデル
+- `models/baseline_model.pkl`: データ数が十分な場合に保存されるベースラインモデル。拡張seedでは `hydrophobicity_group` または `pI_group` が学習可能です。
 
 ## アプタマー特徴量
 
@@ -103,6 +111,8 @@ G4様特徴量として、G-richness、G-skewness、G4Hunter風スコア、G-qua
 ## MVPの範囲
 
 MVPではローカルCSVから既知の正例を読み込み、アプタマーとタンパク質の特徴量化、クロス集計、ヒートマップ、Fisher exact test/chi-square test、FDR補正、Markdownレポートを作成します。モデル学習はデータ数が十分な場合だけ実行されます。
+
+同梱の `aptamers_literature_seed.csv` は解析パイプライン検証用のseedデータです。引用・単位・配列修飾の表記は今後の外部DB連携で精査する前提で、最終的な研究利用では元論文または公式DBで再確認してください。
 
 ## 今後の拡張案
 

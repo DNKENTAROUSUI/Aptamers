@@ -177,6 +177,7 @@ def main() -> None:
     parser.add_argument("--stats-output", default="data/processed/association_stats.csv")
     parser.add_argument("--report-output", default="reports/mvp_report.md")
     parser.add_argument("--figures-dir", default="reports/figures")
+    parser.add_argument("--model-summary", default="data/processed/baseline_model_summary.md")
     args = parser.parse_args()
 
     pairs = read_csv(args.pairs)
@@ -201,7 +202,10 @@ def main() -> None:
     fisher = pd.concat([t for t in fisher_tables if not t.empty], ignore_index=True) if fisher_tables else pd.DataFrame()
     chi2 = pd.DataFrame([chi_square_summary(merged, col) for col in PROTEIN_GROUP_COLUMNS if col in merged.columns])
     write_csv(fisher, args.stats_output)
-    write_report(args.report_output, data_overview(pairs), chi2, fisher)
+    model_summary = "モデル学習は未実行、またはデータ数不足のためスキップされました。"
+    if Path(args.model_summary).exists():
+        model_summary = Path(args.model_summary).read_text(encoding="utf-8")
+    write_report(args.report_output, data_overview(pairs), chi2, fisher, model_summary=model_summary)
     LOGGER.info("Wrote merged data, figures, association stats, and report.")
 
 

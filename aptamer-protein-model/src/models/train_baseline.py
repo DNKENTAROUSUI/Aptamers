@@ -137,7 +137,7 @@ def dataframe_to_markdown(df: pd.DataFrame) -> str:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", default="data/processed/merged_features.csv")
-    parser.add_argument("--target", default="charge_group")
+    parser.add_argument("--target", default="hydrophobicity_group")
     parser.add_argument("--model-output", default="models/baseline_model.pkl")
     parser.add_argument("--metrics-output", default="data/processed/baseline_model_metrics.csv")
     parser.add_argument("--importance-output", default="data/processed/baseline_feature_importance.csv")
