@@ -1,0 +1,6 @@
+aptamer_id,aptamer_name,sequence,nucleic_acid_type,target_name,target_type,kd_value,kd_unit,source_database,reference_doi
+APT001,Thrombin 15mer,GGTTGGTGTGGTTGG,DNA,Thrombin,protein,100,nM,example,10.0000/example1
+APT002,VEGF aptamer,AGGACACGGCAGACUGUUGAGG,RNA,VEGFA,protein,50,nM,example,10.0000/example2
+APT003,PDGF aptamer,GGGAGGACGAUGCGGAAACGCUUACGGUGG,DNA,PDGFB,protein,1,nM,example,10.0000/example3
+APT004,IgE aptamer,ATACCAGCTTATTCAATTAG,DNA,IgE,protein,10,nM,example,10.0000/example4
+APT005,Nucleolin aptamer,GGTGGTGGTGGTTGTGGTGGTGGTGG,DNA,Nucleolin,protein,5,nM,example,10.0000/example5
